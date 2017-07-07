@@ -19,22 +19,3 @@ $(document).ready(function(){
     event.preventDefault();
   });
 });
-
-    // var trackScore = parseInt("trackInput").val();
-
-    // if (trackScore === 1){
-    //   $("#webdesigner").show();
-    // }else if (trackScore === 2){
-    //   $("#androidapp").show();
-    // }else (trackScore === 3){
-    //   $("#fullstack").show();
-    // }
-
-    // $(".panel-success").first().click(function(){
-    //   $(this).find(".panel-body").toggle();
-    // });
-
-
-  });
-
-});
