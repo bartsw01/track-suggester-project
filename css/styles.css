@@ -1,8 +1,16 @@
+.jumbotron {
+
+}
+
+
 .jumbotron h1{
-  text-align: center;
+  text-align: left;
 }
 .jumbotron p{
-  text-align: center;
+  text-align: left;
+}
+img.logo {
+  float:right;
 }
 #formSurvey{
   border: 3px;
