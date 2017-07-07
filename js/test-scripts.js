@@ -4,17 +4,16 @@ $(document).ready(function(){
     var lastNameInput = $("input#lastName").val();
     var trackInput = $("input:radio[name=track]:checked").val();
 
-    if (trackInput === "web") {
+    if (trackInput === "webdesign") {
       $("#webdesigner").show();
     }else if (trackInput === "android") {
       $("#androidapp").show();
-    }else if (trackInput === "full"){
+    }else if (trackInput === "fullstack"){
       $("#fullstack").show();
     }
 
     $(".firstName").text(firstNameInput);
     $(".lastName").text(lastNameInput);
-    // $(".food").text(foodInput);
     $(".track").text(trackInput);
     $("#survey").show();
     event.preventDefault();
