@@ -8,6 +8,12 @@ h1{
   padding: 5%;
 }
 
-.panel-body{
+#webdesigner{
+  display: none;
+}
+#androidapp{
+  display: none;
+}
+#fullstack{
   display: none;
 }
