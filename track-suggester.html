@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <meta charset="utf-8">
+    <title>Programming Track</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>What Programming Track Should I take?</h1>
+        <p>Answer the questions below to get a suggestion.</p>
+      </div>
+
+      <div>
+        <form id="formSurvey">
+          <div class="form-group">
+            <label for="firstName">First Name: </label>
+            <input id="firstName" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name: </label>
+            <input id="lastName" class="form-control" type="text">
+          </div>
+
+
+          <div class="radio">
+            <label>
+              <input type="radio" name="track" value="webdesign" checked>
+              Web Designer
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="track" value="androidapp">
+              Android App Developer
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="track" value="fullstack">
+              Full Stack Web Developer
+            </label>
+          </div>
+
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+      <div id="survey">
+        <h1>Survey Results</h1>
+        <p>Hi there! <span class="firstName"></span> <span class="lastName"></span><br><span class="food"></span><br><span class="flavor"></span></p>
+      </div>
+    </div>
+    <div class="container">
+      <div id="webdesigner">
+        <h1>Web Designer</h1>
+        <ul>
+          <li><a href="https://votinginfoproject.org/">Click Here</a> For Info on Being a Web Designer!</li>
+          <li><a href="https://en.wikipedia.org/wiki/Twenty-sixth_Amendment_to_the_United_States_Constitution">Click Here</a> for requirements!</li>
+        </ul>
+      </div>
+      <div id="androidapp">
+        <h1>Android App Developer</h1>
+        <ul>
+          <li><a href="https://votinginfoproject.org/">Click Here</a> Android App Developer</li>
+          <li><a href="https://en.wikipedia.org/wiki/Twenty-sixth_Amendment_to_the_United_States_Constitution">Click Here</a> for requirements!</li>
+        </ul>
+      </div>
+      <div id="fullstack">
+        <h1>Full Stack Web Developer</h1>
+        <ul>
+          <li><a href="https://votinginfoproject.org/">Click Here</a> Full Stack Web Developer</li>
+          <li><a href="https://en.wikipedia.org/wiki/Twenty-sixth_Amendment_to_the_United_States_Constitution">Click Here</a> for requirements!</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

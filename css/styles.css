@@ -1,0 +1,13 @@
+h1{
+  text-align: center;
+}
+#formSurvey{
+  border: 3px;
+  background-color: gray;
+  border-color: black;
+  padding: 5%;
+}
+
+.panel-body{
+  display: none;
+}
