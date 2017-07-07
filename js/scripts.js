@@ -1,15 +1,14 @@
-$(document).ready(function() {
-  $("#formSurvey").submit(function(){
+$(document).ready(function(){
+  $("#formSurvey").submit(function(event){
     var firstNameInput = $("input#firstName").val();
     var lastNameInput = $("input#lastName").val();
     var trackInput = $("input:radio[name=track]:checked").val();
-    // var trackScore = parseInt("trackInput").val();
 
-    if (trackInput === "web") {
+    if (trackInput === "webdesign") {
       $("#webdesigner").show();
     }else if (trackInput === "android") {
       $("#androidapp").show();
-    }else if (trackInput === "full"){
+    }else if (trackInput === "fullstack"){
       $("#fullstack").show();
     }
 
@@ -18,6 +17,10 @@ $(document).ready(function() {
     $(".track").text(trackInput);
     $("#survey").show();
     event.preventDefault();
+  });
+});
+
+    // var trackScore = parseInt("trackInput").val();
 
     // if (trackScore === 1){
     //   $("#webdesigner").show();
