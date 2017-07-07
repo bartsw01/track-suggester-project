@@ -2,15 +2,20 @@ $(document).ready(function(){
   $("#formSurvey").submit(function(event){
     var firstNameInput = $("input#firstName").val();
     var lastNameInput = $("input#lastName").val();
-    // var food = document.getElementById('food').value;
+    var trackInput = $("input:radio[name=track]:checked").val();
 
-    var foodInput = $("#food").val();
-    var flavorInput = $("input:radio[name=flavor]:checked").val();
+    if (trackInput === "web") {
+      $("#webdesigner").show();
+    }else if (trackInput === "android") {
+      $("#androidapp").show();
+    }else if (trackInput === "full"){
+      $("#fullstack").show();
+    }
 
     $(".firstName").text(firstNameInput);
     $(".lastName").text(lastNameInput);
-    $(".food").text(foodInput);
-    $(".flavor").text(flavorInput);
+    // $(".food").text(foodInput);
+    $(".track").text(trackInput);
     $("#survey").show();
     event.preventDefault();
   });

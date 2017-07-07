@@ -5,35 +5,33 @@ $(document).ready(function() {
     var trackInput = $("input:radio[name=track]:checked").val();
     // var trackScore = parseInt("trackInput").val();
 
+    if (trackInput === "web") {
+      $("#webdesigner").show();
+    }else if (trackInput === "android") {
+      $("#androidapp").show();
+    }else if (trackInput === "full"){
+      $("#fullstack").show();
+    }
+
     $(".firstName").text(firstNameInput);
     $(".lastName").text(lastNameInput);
     $(".track").text(trackInput);
     $("#survey").show();
+    event.preventDefault();
 
-
-
-
-
-
-
-
-
-
-    // if (trackInput === 1){
+    // if (trackScore === 1){
     //   $("#webdesigner").show();
-    // }else if (trackInput === 2){
+    // }else if (trackScore === 2){
     //   $("#androidapp").show();
-    // }else (trackInput === 3){
+    // }else (trackScore === 3){
     //   $("#fullstack").show();
     // }
-
-
 
     // $(".panel-success").first().click(function(){
     //   $(this).find(".panel-body").toggle();
     // });
 
-    event.preventDefault();
+
   });
 
 });

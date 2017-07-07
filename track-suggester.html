@@ -14,12 +14,11 @@
         <h1>What Programming Track Should I take?</h1>
         <p>Answer the questions below to get a suggestion.</p>
       </div>
-
       <div>
         <form id="formSurvey">
           <div class="form-group">
             <label for="firstName">First Name: </label>
-            <input id="firstName" class="form-control" type="text">
+            <input id="lastName" class="form-control" type="text">
           </div>
           <div class="form-group">
             <label for="lastName">Last Name: </label>
@@ -28,13 +27,13 @@
           <div class="radio">
             <label>
               <input type="radio" name="track" value="web" checked>
-              Web Designer
+              Web Developer
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="track" value="app">
-              Android App Developer
+              <input type="radio" name="track" value="android">
+              Android Apps
             </label>
           </div>
           <div class="radio">
@@ -44,12 +43,12 @@
             </label>
           </div>
 
-          <button type="submit" class="btn">Submit</button>
+          <button type="submit" class="btn">Submit Survey</button>
         </form>
-      </div>
-      <div id="survey">
-        <h1>Survey Results</h1>
-        <p>Hi there! <span class="firstName"></span> <span class="lastName"></span><br><span class="food"></span><br><span class="flavor"></span></p>
+        <div id="survey">
+          <h1>Survey Results</h1>
+          <p>Hi there! <span class="firstName"></span> <span class="lastName"></span><br><span class="food"></span><br><span class="track"></span></p>
+        </div>
       </div>
     </div>
     <div class="container">
